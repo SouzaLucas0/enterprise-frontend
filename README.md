@@ -6,10 +6,10 @@
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.x-06B6D4?logo=tailwindcss)
 ![Socket.io](https://img.shields.io/badge/Socket.io-4.8.3-010101?logo=socketdotio)
 ![ESLint](https://img.shields.io/badge/ESLint-9.x-4B32C3?logo=eslint)
-
+![Node.js](https://img.shields.io/badge/Node.js-18.20.x-339933?logo=node.js&logoColor=white)
 ---
 
-### 🚨 A versão do Next e do React utilizadas são defasadas para que o sistema possa operar em ambientes Windowns Server 2012
+### 🚨 A versão do Next, React e Node utilizadas são defasadas para que o sistema possa operar em ambientes Windowns Server 2012!
 
 ---
 
@@ -217,14 +217,6 @@ A aplicação possui endpoints internos para gerenciamento de configuração e s
 - Integração com serviços externos e APIs.
 - Estrutura preparada para distribuição corporativa.
 - Experiência com configuração dinâmica e automação de processos.
-
----
-
-# 📝 Observações
-
-Este projeto representa uma solução frontend empresarial desenvolvida para cenários reais de operação, integração e automação.
-
-O nome **Enterprise** é utilizado como identificação pública do projeto, preservando detalhes específicos da aplicação original desenvolvida em ambiente comercial.
 
 ---
 
