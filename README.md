@@ -224,7 +224,7 @@ A aplicação possui endpoints internos para gerenciamento de configuração e s
 
 # 📸 Screenshots
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.jpeg)
 
 ---
 
