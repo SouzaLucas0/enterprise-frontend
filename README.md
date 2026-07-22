@@ -220,6 +220,14 @@ A aplicação possui endpoints internos para gerenciamento de configuração e s
 
 ---
 
+---
+
+# 📸 Screenshots
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
 # 📬 Contato
 
 - GitHub: https://github.com/SouzaLucas0
