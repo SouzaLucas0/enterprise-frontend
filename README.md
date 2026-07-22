@@ -1,36 +1,237 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Enterprise Frontend
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-16.0.3-000000?logo=nextdotjs)
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.x-06B6D4?logo=tailwindcss)
+![Socket.io](https://img.shields.io/badge/Socket.io-4.8.3-010101?logo=socketdotio)
+![ESLint](https://img.shields.io/badge/ESLint-9.x-4B32C3?logo=eslint)
 
-First, run the development server:
+---
+
+# 💡 Visão geral
+
+O **Enterprise Frontend** é uma aplicação web moderna desenvolvida com **Next.js**, projetada para centralizar operações empresariais, integrações e monitoramento de serviços em uma única interface.
+
+A plataforma fornece um painel administrativo modular para gerenciamento de processos operacionais, comunicação em tempo real e configuração de serviços integrados.
+
+O projeto foi desenvolvido seguindo uma arquitetura preparada para ambientes corporativos, com foco em escalabilidade, organização de módulos e experiência de uso.
+
+---
+
+# ✨ Principais valores e objetivos
+
+- Centralizar operações empresariais em uma única interface.
+- Reduzir processos manuais através de automações.
+- Disponibilizar acompanhamento em tempo real dos serviços.
+- Facilitar configurações de ambiente e integrações externas.
+- Criar uma experiência administrativa simples e eficiente.
+
+---
+
+# 🧩 O que o projeto entrega
+
+A aplicação fornece uma interface completa para gerenciamento de módulos empresariais:
+
+- Dashboard operacional.
+- Monitoramento de serviços em tempo real.
+- Configuração de integrações.
+- Comunicação com serviços externos.
+- Gestão de processos automatizados.
+- Controle de módulos financeiros e administrativos.
+- Integração com sistemas de mensagens.
+- Gerenciamento de parâmetros da aplicação.
+
+---
+
+# 🛠️ Stack técnico
+
+| Camada | Tecnologia |
+| --- | --- |
+| Framework | Next.js 16 |
+| Interface | React 19 |
+| Linguagem | TypeScript |
+| Estilização | Tailwind CSS 4 |
+| Comunicação em tempo real | Socket.io |
+| Qualidade de código | ESLint |
+| Ambiente | Node.js |
+| Arquitetura | Next.js App Router |
+
+---
+
+# 🧱 Arquitetura resumida
+
+O projeto utiliza o padrão **App Router do Next.js**, mantendo uma estrutura modular organizada por responsabilidade.
+
+```
+src/
+│
+├── app/
+│   ├── api/
+│   ├── dashboard/
+│   ├── settings/
+│   ├── layouts/
+│   └── pages/
+│
+├── components/
+│   ├── ui/
+│   ├── dashboard/
+│   └── modules/
+│
+├── hooks/
+│   └── websocket/
+│
+├── services/
+│   └── integrations/
+│
+├── lib/
+│   └── configuration/
+│
+└── types/
+```
+
+Principais responsabilidades:
+
+- `app/` — páginas, rotas e composição da aplicação.
+- `app/api/` — rotas internas para comunicação e configuração.
+- `components/` — componentes reutilizáveis e módulos visuais.
+- `hooks/` — lógica compartilhada e comunicação em tempo real.
+- `services/` — serviços de integração.
+- `lib/` — configurações e utilitários.
+- `types/` — contratos TypeScript.
+
+---
+
+# 🔌 Integração com Backend
+
+O frontend foi desenvolvido para trabalhar integrado a uma API empresarial responsável pelos processos de negócio.
+
+Comunicação realizada através de:
+
+- Requisições HTTP.
+- WebSocket utilizando Socket.io.
+- Configurações dinâmicas de ambiente.
+- Monitoramento de serviços em tempo real.
+
+Principais integrações:
+
+- Status de serviços.
+- Processos automatizados.
+- Configuração da aplicação.
+- Atualizações de ambiente.
+- Comunicação entre módulos.
+
+---
+
+# ▶️ Como rodar localmente
+
+## Pré-requisitos
+
+- Node.js 20+
+- npm, pnpm ou yarn
+
+## Instalação
+
+```bash
+npm install
+```
+
+## Desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3001) with your browser to see the result.
+A aplicação ficará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3001
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# 🔧 Comandos úteis
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev      # inicia ambiente de desenvolvimento
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run build    # gera build de produção
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+npm run start    # executa aplicação em produção
 
-## Deploy on Vercel
+npm run lint     # análise estática do código
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 💿 Instalação e deploy
+
+O projeto possui suporte para execução em ambientes corporativos utilizando build otimizada do Next.js.
+
+Possibilidades de execução:
+
+- Node.js diretamente.
+- Serviço Windows utilizando NSSM.
+- Instalação automatizada através de instalador corporativo.
+
+A instalação pode realizar:
+
+- Configuração do ambiente.
+- Registro do serviço frontend.
+- Inicialização automática.
+- Integração com API local.
+- Execução após reinicialização do servidor.
+
+---
+
+# 📌 Rotas internas da aplicação
+
+A aplicação possui endpoints internos para gerenciamento de configuração e serviços:
+
+| Método | Rota | Descrição |
+|---|---|---|
+| GET | `/api/config` | Consulta configurações |
+| POST | `/api/config` | Salva configurações |
+| GET | `/api/key` | Recupera chave da API |
+| PATCH | `/api/key` | Atualiza chave da API |
+| POST | `/api/update` | Executa atualização |
+| POST | `/api/service/start` | Inicializa serviço |
+| POST | `/api/service/stop` | Finaliza serviço |
+
+---
+
+# 🌟 Destaques para recrutadores
+
+- Aplicação frontend empresarial utilizando Next.js moderno.
+- Arquitetura modular baseada em App Router.
+- Desenvolvimento com TypeScript em ambiente real de produção.
+- Comunicação em tempo real utilizando WebSocket.
+- Integração com serviços externos e APIs.
+- Estrutura preparada para distribuição corporativa.
+- Experiência com configuração dinâmica e automação de processos.
+
+---
+
+# 📸 Screenshots
+
+Capturas da aplicação podem ser adicionadas futuramente para demonstrar:
+
+- Dashboard principal.
+- Tela de configurações.
+- Monitoramento de serviços.
+- Módulos administrativos.
+
+---
+
+# 📝 Observações
+
+Este projeto representa uma solução frontend empresarial desenvolvida para cenários reais de operação, integração e automação.
+
+O nome **Enterprise** é utilizado como identificação pública do projeto, preservando detalhes específicos da aplicação original desenvolvida em ambiente comercial.
+
+---
+
+# 📬 Contato
+
+- GitHub: https://github.com/SouzaLucas0
+- LinkedIn: linkedin.com/in/souzalucas0/
