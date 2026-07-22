@@ -9,13 +9,17 @@
 
 ---
 
+# 🚨 A versão do Next e do React utilizadas são defasadas para que o sistema possa operar em ambientes Windowns Server 2012
+
+---
+
 # 💡 Visão geral
 
 O **Enterprise Frontend** é uma aplicação web moderna desenvolvida com **Next.js**, projetada para centralizar operações empresariais, integrações e monitoramento de serviços em uma única interface.
 
 A plataforma fornece um painel administrativo modular para gerenciamento de processos operacionais, comunicação em tempo real e configuração de serviços integrados.
 
-O projeto foi desenvolvido seguindo uma arquitetura preparada para ambientes corporativos, com foco em escalabilidade, organização de módulos e experiência de uso.
+O projeto foi desenvolvido para rodar como um serviço do windows, seguindo uma arquitetura preparada para ambientes corporativos, com foco em escalabilidade, organização de módulos e experiência de uso.
 
 ---
 
@@ -38,9 +42,13 @@ A aplicação fornece uma interface completa para gerenciamento de módulos empr
 - Configuração de integrações.
 - Comunicação com serviços externos.
 - Gestão de processos automatizados.
-- Controle de módulos financeiros e administrativos.
 - Integração com sistemas de mensagens.
 - Gerenciamento de parâmetros da aplicação.
+- Ambientes para personalização de modelo de mensagens para Aniversáriantes, Cobranças, Vendas, Envio de Boleto bancário, Envio de NFE e Acompanhamento de Ordem de Serviços.
+- Ambiente para configuração de regras de negócios
+- Ambiente para getenciamento de contas WhatsApp.
+- Ambiente para controle de disparo de mensagens por cliente.
+- Controle de versão e atualização automática do serviço do Backend.
 
 ---
 
@@ -98,7 +106,7 @@ Principais responsabilidades:
 - `hooks/` — lógica compartilhada e comunicação em tempo real.
 - `services/` — serviços de integração.
 - `lib/` — configurações e utilitários.
-- `types/` — contratos TypeScript.
+- `types/` — tipagens TypeScript.
 
 ---
 
@@ -127,7 +135,7 @@ Principais integrações:
 
 ## Pré-requisitos
 
-- Node.js 20+
+- Node.js 18
 - npm, pnpm ou yarn
 
 ## Instalação
@@ -209,17 +217,6 @@ A aplicação possui endpoints internos para gerenciamento de configuração e s
 - Integração com serviços externos e APIs.
 - Estrutura preparada para distribuição corporativa.
 - Experiência com configuração dinâmica e automação de processos.
-
----
-
-# 📸 Screenshots
-
-Capturas da aplicação podem ser adicionadas futuramente para demonstrar:
-
-- Dashboard principal.
-- Tela de configurações.
-- Monitoramento de serviços.
-- Módulos administrativos.
 
 ---
 
