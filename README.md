@@ -232,5 +232,5 @@ A aplicação possui endpoints internos para gerenciamento de configuração e s
 
 # 📬 Contato
 
-- GitHub: https://github.com/SouzaLucas0
-- LinkedIn: linkedin.com/in/souzalucas0/
+- GitHub: [github.com/SouzaLucas0](https://github.com/SouzaLucas0/) 
+- LinkedIn: [linkedin.com/in/souzalucas0/](https://www.linkedin.com/in/souzalucas0/)
