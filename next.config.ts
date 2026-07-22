@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
 	output: 'standalone',
 	outputFileTracingExcludes: {
 		'*': [
-			'C:/CeConnect/**',
-			'C:\\CeConnect\\**',
+			'C:/Enterprise/**',
+			'C:\\Enterprise\\**',
 		],
 	},
 }

@@ -1,8 +1,8 @@
-import { NextResponse } from 'next/server'
 import fs from 'fs'
+import { NextResponse } from 'next/server'
 import path from 'path'
 
-const FILE_PATH = path.resolve('C:\\CeConnect\\application\\params.ini')
+const FILE_PATH = path.resolve('C:\\Enterprise\\application\\params.ini')
 
 function readApiKey(): string | null {
   if (!fs.existsSync(FILE_PATH)) return null

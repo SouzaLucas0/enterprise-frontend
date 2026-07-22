@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
 			return NextResponse.json({ error: 'Método não permitido' }, { status: 405 })
 		}
 
-		const batPath = 'C:\\CeConnect\\update\\atualizar_servico.bat'
+		const batPath = 'C:\\Enterprise\\update\\atualizar_servico.bat'
 
 		console.log(`[UPDATE API] Iniciando atualização com: ${batPath}`)
 
@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
 			'cmd.exe',
 			['/c', batPath],
 			{
-				cwd: 'C:\\CeConnect\\update',
+				cwd: 'C:\\Enterprise\\update',
 				timeout: 60000,
 				windowsHide: true,
 			},

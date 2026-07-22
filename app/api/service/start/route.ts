@@ -2,7 +2,7 @@ import { execSync } from 'child_process'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest) {
-	let serviceName = 'CEConnectApi'
+	let serviceName = 'EnterpriseApi'
 
 	try {
 		const contentType = request.headers.get('content-type')

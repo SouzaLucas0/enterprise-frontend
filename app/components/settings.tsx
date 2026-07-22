@@ -1,7 +1,7 @@
 'use client'
 
 import { ApiParamasType, ParamsType } from "@/@types/paramsType"
-import { createApiConfig, createDbConfig, createPathsConfig, getApiConfig, getApiKey, getDbConfig, getPathsConfig, startCEConnectService, stopCEConnectService, testKey, validateKey } from "@/lib/paramsService"
+import { createApiConfig, createDbConfig, createPathsConfig, getApiConfig, getApiKey, getDbConfig, getPathsConfig, startEnterpriseService, stopEnterpriseService, testKey, validateKey } from "@/lib/paramsService"
 import { Check, Database, Folders, Power, Save, Settings, Unplug } from "lucide-react"
 import { useEffect, useState } from "react"
 import { toast } from "react-toastify"
@@ -171,7 +171,7 @@ export function SettingsPage() {
         e.preventDefault()
         setIsServiceLoading(true)
         try {
-            await stopCEConnectService()
+            await stopEnterpriseService()
         } catch (error) {
             console.error('Erro ao parar serviço:', error)
         } finally {
@@ -183,7 +183,7 @@ export function SettingsPage() {
         e.preventDefault()
         setIsServiceLoading(true)
         try {
-            await startCEConnectService()
+            await startEnterpriseService()
         } catch (error) {
             console.error('Erro ao iniciar serviço:', error)
         } finally {

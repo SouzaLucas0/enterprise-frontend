@@ -135,7 +135,7 @@ export async function updateApiKey(key :string) {
 
 }
 
-export async function stopCEConnectService() {
+export async function stopEnterpriseService() {
 	try {
 		const response = await fetch('/api/service/stop', {
 			method: 'POST',
@@ -158,7 +158,7 @@ export async function stopCEConnectService() {
 	}
 }
 
-export async function startCEConnectService() {
+export async function startEnterpriseService() {
 	try {
 		const response = await fetch('/api/service/start', {
 			method: 'POST',
